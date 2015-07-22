@@ -15,7 +15,7 @@ public class Application {
           webPort = "8080";
       }
       System.setProperty("server.port", webPort);
-      SpringApplication.run(SampleController.class, args);
+      SpringApplication.run(Application.class, args);
     }
 
 }
