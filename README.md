@@ -7,6 +7,6 @@ Proyecto Java + Spring boot para curso de Infraestructura de la UCA-PY
 
 Contiene el proyecto inicial con un Hello Controller y un UnitTest.
 
-2. SinTest.
+1. SinTest.
 
 Contiene el proyecto inicial con un Hello Controller pero sin tests.
