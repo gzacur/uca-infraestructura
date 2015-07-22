@@ -1,6 +1,9 @@
 # SpringBeans
 .springBeans
 
+#targer directory
+target/
+
 *.pydevproject
 .metadata
 .gradle
