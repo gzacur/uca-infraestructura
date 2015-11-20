@@ -6,9 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 public class HelloController {
 
-    @RequestMapping("/")
-    public String index() {
-        return "Corriendo desde Heroku!";
-    }
+	public static final String helloText = "Bienvenidos al curso de Infraestructura | UCA 2015";
+
+	@RequestMapping("/")
+	public String index() {
+		return helloText;
+	}
 
 }
