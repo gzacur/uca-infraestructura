@@ -17,8 +17,7 @@ public class CalculadoraServiceTest {
 
 	private CalculadoraService calculadoraService = new CalculadoraService();
 
-	// Valida una suma valida.
-
+	// Valida que la suma se realice de manera correcta.
 	@Test
 	public void sumaTest() {
 
@@ -42,14 +41,11 @@ public class CalculadoraServiceTest {
 	}
 
 	// Se espera que falle.
-	@Test
+	@Test(expected = ArithmeticException.class)
 	public void testDividirEntreCeroTest() {
-		try {
-			calculadoraService.divideInt(6, 0);
-			Assert.fail("Debería haber lanzado una excepción al tratar de dividir entre 0.");
-		} catch (ArithmeticException e) {
-			// bien
-		}
+
+		calculadoraService.divideInt(6, 0);
+		Assert.fail("Debería haber lanzado una excepción al tratar de dividir entre 0.");
 
 	}
 
